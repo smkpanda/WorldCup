@@ -1,0 +1,11 @@
+code,name_en,name_zh,flag,fifa_rank,elo,squad_value_m,form,source_url,license
+MEX,Mexico,墨西哥,🇲🇽,15,1760,190,W|W|D|W|W,https://www.wikidata.org/wiki/Q43310,CC0-1.0
+RSA,South Africa,南非,🇿🇦,61,1580,42,W|D|W|W|D,https://www.wikidata.org/wiki/Q181190,CC0-1.0
+KOR,Korea Republic,韩国,🇰🇷,22,1725,145,W|W|D|L|W,https://www.wikidata.org/wiki/Q543842,CC0-1.0
+CZE,Czechia,捷克,🇨🇿,44,1690,165,W|D|W|D|L,https://www.wikidata.org/wiki/Q483053,CC0-1.0
+CAN,Canada,加拿大,🇨🇦,28,1710,215,W|D|W|L|W,https://www.wikidata.org/wiki/Q207337,CC0-1.0
+BIH,Bosnia & Herzegovina,波黑,🇧🇦,57,1615,105,D|W|L|W|D,https://www.wikidata.org/wiki/Q194867,CC0-1.0
+USA,United States,美国,🇺🇸,14,1790,350,W|W|L|D|W,https://www.wikidata.org/wiki/Q164089,CC0-1.0
+PAR,Paraguay,巴拉圭,🇵🇾,39,1660,125,D|W|D|L|W,https://www.wikidata.org/wiki/Q170512,CC0-1.0
+ARG,Argentina,阿根廷,🇦🇷,1,2110,780,W|W|W|W|W,https://www.wikidata.org/wiki/Q79800,CC0-1.0
+FRA,France,法国,🇫🇷,2,2050,1210,W|W|D|W|W,https://www.wikidata.org/wiki/Q47774,CC0-1.0

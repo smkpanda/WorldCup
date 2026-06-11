@@ -12,7 +12,7 @@ export default function MatchDetail({ match, locale }: { match: Prediction; loca
         <div className="detail-meta">{zh ? match.stageZh : match.stage} · {zh ? match.venueZh : match.venue}<br />{kickoff.bjt} · {kickoff.utc}</div>
         <div className="detail-teams">
           <div><span className="flag xl">{match.homeTeam.flag}</span><h1>{localTeam(match.homeTeam, locale)}</h1><p>{zh ? "世界排名" : "World rank"} #{match.homeTeam.fifaRank}</p></div>
-          <div className="detail-score"><small>{zh ? "单一最高概率比分" : "Highest-probability score"}</small><b>{match.likelyScore}</b><span>{match.expectedHomeGoals.toFixed(2)} xG · {match.expectedAwayGoals.toFixed(2)} xG</span></div>
+          <div className="detail-score"><small>{zh ? "中心比分预测" : "Central score projection"}</small><b>{match.likelyScore}</b><span>{match.expectedHomeGoals.toFixed(2)} xG · {match.expectedAwayGoals.toFixed(2)} xG</span></div>
           <div><span className="flag xl">{match.awayTeam.flag}</span><h1>{localTeam(match.awayTeam, locale)}</h1><p>{zh ? "世界排名" : "World rank"} #{match.awayTeam.fifaRank}</p></div>
         </div>
         <div className="detail-probs"><div><b>{match.homeWin}%</b><span>{localTeam(match.homeTeam, locale)} {zh ? "胜" : "win"}</span></div><div><b>{match.draw}%</b><span>{zh ? "平局" : "Draw"}</span></div><div><b>{match.awayWin}%</b><span>{localTeam(match.awayTeam, locale)} {zh ? "胜" : "win"}</span></div></div>

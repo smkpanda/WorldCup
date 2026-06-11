@@ -1,0 +1,11 @@
+team_code,recent_points_per_game,recent_goals_for,recent_goals_against,world_cup_experience,rest_days,source_url,updated_at
+MEX,2.10,1.75,0.85,0.82,7,manual://curated-team-form,2026-06-10
+RSA,1.75,1.35,0.95,0.55,7,manual://curated-team-form,2026-06-10
+KOR,1.90,1.60,1.05,0.72,7,manual://curated-team-form,2026-06-10
+CZE,1.65,1.45,1.15,0.58,7,manual://curated-team-form,2026-06-10
+CAN,1.85,1.70,1.10,0.48,7,manual://curated-team-form,2026-06-10
+BIH,1.45,1.30,1.35,0.35,7,manual://curated-team-form,2026-06-10
+USA,1.95,1.85,1.00,0.68,7,manual://curated-team-form,2026-06-10
+PAR,1.55,1.25,1.15,0.62,7,manual://curated-team-form,2026-06-10
+ARG,2.35,2.05,0.70,1.00,7,manual://historical-review,2022-12-17
+FRA,2.20,2.15,0.85,1.00,7,manual://historical-review,2022-12-17

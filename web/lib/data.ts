@@ -1,32 +1,12 @@
-import { Pool } from "pg";
-import { demoPredictions } from "./demo-data";
+import predictions from "@/data/predictions.json";
 import type { Prediction } from "./types";
 
-let pool: Pool | undefined;
-
-function getPool() {
-  if (!process.env.DATABASE_URL) return undefined;
-  pool ??= new Pool({ connectionString: process.env.DATABASE_URL, max: 3 });
-  return pool;
-}
+const data = predictions as Prediction[];
 
 export async function getPredictions(): Promise<Prediction[]> {
-  const db = getPool();
-  if (!db) return demoPredictions;
-
-  try {
-    const result = await db.query<{ payload: Prediction }>(
-      `select payload from predictions
-       where published = true
-       order by (payload->>'kickoff')::timestamptz asc`,
-    );
-    return result.rows.length ? result.rows.map((row) => row.payload) : demoPredictions;
-  } catch (error) {
-    console.error("Database unavailable; using demo predictions", error);
-    return demoPredictions;
-  }
+  return data;
 }
 
 export async function getPrediction(id: string): Promise<Prediction | undefined> {
-  return (await getPredictions()).find((prediction) => prediction.id === id);
+  return data.find((prediction) => prediction.id === id);
 }

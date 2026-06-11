@@ -5,7 +5,7 @@ import type { Prediction } from "@/lib/types";
 const t = {
   en: {
     worldRank: "World rank",
-    modelPick: "Highest-probability score",
+    modelPick: "Central score projection",
     confidence: "Data confidence",
     home: "Home",
     draw: "Draw",
@@ -30,7 +30,7 @@ const t = {
   },
   zh: {
     worldRank: "世界排名",
-    modelPick: "单一最高概率比分",
+    modelPick: "中心比分预测",
     confidence: "数据置信度",
     home: "主胜",
     draw: "平局",

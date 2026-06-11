@@ -1,0 +1,25 @@
+player_id,name,team_code,position,role,minutes,goals,assists,shots,shots_on_target,chances_created,pass_completion,tackles_won,interceptions,clearances,saves,goals_prevented,clean_sheets,competition_strength,opponent_strength,market_value_m,occurred_at,source_url
+mex-jimenez,Raúl Jiménez,MEX,forward,starter,2910,18,6,78,37,31,76,8,4,2,0,0,0,1.05,1.02,5,2026-06-01,manual://player-stat-sheet
+mex-alvarez,Edson Álvarez,MEX,midfielder,starter,3260,4,4,25,10,43,87,61,49,32,0,0,0,1.05,1.03,25,2026-06-01,manual://player-stat-sheet
+mex-montes,César Montes,MEX,defender,starter,3020,3,1,14,5,9,86,44,51,126,0,0,0,1.00,1.00,6,2026-06-01,manual://player-stat-sheet
+rsa-mokoena,Teboho Mokoena,RSA,midfielder,starter,3440,7,8,49,19,58,86,54,39,26,0,0,0,0.82,0.91,4,2026-06-01,manual://player-stat-sheet
+rsa-williams,Ronwen Williams,RSA,goalkeeper,starter,3150,0,0,0,0,0,72,0,0,0,91,5.4,13,0.82,0.91,2,2026-06-01,manual://player-stat-sheet
+rsa-mudau,Khuliso Mudau,RSA,defender,starter,2850,2,5,16,5,26,82,48,37,82,0,0,0,0.82,0.91,2,2026-06-01,manual://player-stat-sheet
+kor-son,Son Heung-min,KOR,forward,starter,3300,24,13,104,53,61,82,12,9,3,0,0,0,1.08,1.02,20,2026-06-01,manual://player-stat-sheet
+kor-kim,Kim Min-jae,KOR,defender,starter,3420,4,2,19,7,11,91,52,47,142,0,0,0,1.08,1.02,40,2026-06-01,manual://player-stat-sheet
+kor-lee,Lee Kang-in,KOR,midfielder,starter,3010,11,12,67,28,72,89,27,19,8,0,0,0,1.08,1.02,25,2026-06-01,manual://player-stat-sheet
+cze-schick,Patrik Schick,CZE,forward,starter,2830,22,5,83,39,25,75,7,4,3,0,0,0,1.08,1.01,25,2026-06-01,manual://player-stat-sheet
+cze-soucek,Tomáš Souček,CZE,midfielder,starter,3760,10,4,57,21,34,83,72,48,97,0,0,0,1.08,1.01,30,2026-06-01,manual://player-stat-sheet
+cze-coufal,Vladimír Coufal,CZE,defender,starter,2940,1,8,18,4,47,80,51,34,86,0,0,0,1.05,1.00,8,2026-06-01,manual://player-stat-sheet
+can-davies,Alphonso Davies,CAN,defender,starter,3480,9,15,58,24,69,88,47,29,42,0,0,0,1.10,1.03,50,2026-06-01,manual://player-stat-sheet
+can-david,Jonathan David,CAN,forward,starter,3580,30,8,118,61,39,81,10,6,2,0,0,0,1.08,1.02,45,2026-06-01,manual://player-stat-sheet
+can-buchanan,Tajon Buchanan,CAN,midfielder,starter,2310,7,9,44,19,48,84,28,17,13,0,0,0,1.06,1.01,8,2026-06-01,manual://player-stat-sheet
+bih-dzeko,Edin Džeko,BIH,forward,starter,2670,20,7,79,38,27,77,8,3,4,0,0,0,0.94,0.97,3,2026-06-01,manual://player-stat-sheet
+bih-kolasinac,Sead Kolašinac,BIH,defender,starter,2880,2,3,13,5,16,85,46,42,91,0,0,0,1.05,1.00,8,2026-06-01,manual://player-stat-sheet
+bih-dedic,Amar Dedić,BIH,defender,starter,3050,5,8,31,12,46,84,43,31,76,0,0,0,1.00,0.99,15,2026-06-01,manual://player-stat-sheet
+usa-pulisic,Christian Pulisic,USA,forward,starter,3690,27,16,121,60,78,86,18,11,4,0,0,0,1.12,1.04,50,2026-06-01,manual://player-stat-sheet
+usa-robinson,Antonee Robinson,USA,defender,starter,3710,2,12,20,6,67,87,58,46,98,0,0,0,1.10,1.03,25,2026-06-01,manual://player-stat-sheet
+usa-adams,Tyler Adams,USA,midfielder,starter,2140,2,5,17,6,38,89,49,36,24,0,0,0,1.10,1.03,18,2026-06-01,manual://player-stat-sheet
+par-almiron,Miguel Almirón,PAR,midfielder,starter,3100,10,9,71,29,55,82,29,21,12,0,0,0,1.02,1.01,12,2026-06-01,manual://player-stat-sheet
+par-enciso,Julio Enciso,PAR,forward,starter,2050,12,8,73,31,48,80,13,9,3,0,0,0,1.08,1.03,22,2026-06-01,manual://player-stat-sheet
+par-gomez,Gustavo Gómez,PAR,defender,starter,3540,5,2,24,9,10,88,55,52,137,0,0,0,0.94,0.98,6,2026-06-01,manual://player-stat-sheet

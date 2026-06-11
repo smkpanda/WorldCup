@@ -1,0 +1,5 @@
+id,kickoff_utc,stage_en,stage_zh,venue_en,venue_zh,status,home_team,away_team,venue_home_advantage,source_url,license
+mex-rsa,2026-06-11T19:00:00Z,Group stage,小组赛,Mexico City Stadium,墨西哥城体育场,upcoming,MEX,RSA,0.12,https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt,CC0-1.0
+kor-cze,2026-06-12T02:00:00Z,Group stage,小组赛,Guadalajara Stadium,瓜达拉哈拉体育场,upcoming,KOR,CZE,0.00,https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt,CC0-1.0
+can-bih,2026-06-12T19:00:00Z,Group stage,小组赛,Toronto Stadium,多伦多体育场,upcoming,CAN,BIH,0.10,https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt,CC0-1.0
+usa-par,2026-06-13T01:00:00Z,Group stage,小组赛,Los Angeles Stadium,洛杉矶体育场,upcoming,USA,PAR,0.10,https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt,CC0-1.0

@@ -3,7 +3,7 @@ from datetime import datetime
 
 from worldcup.domain import MatchContext, TeamContext
 from worldcup.metrics import brier_score, log_loss
-from worldcup.model import poisson_probability, predict_match, score_matrix
+from worldcup.model import poisson_median, poisson_probability, predict_match, score_matrix
 
 
 def team(code: str, rank: int, elo: float) -> TeamContext:
@@ -18,13 +18,18 @@ class ModelTests(unittest.TestCase):
         matrix = score_matrix(1.7, 1.1)
         self.assertAlmostEqual(sum(map(sum, matrix)), 1, places=10)
 
+    def test_poisson_median_is_not_systematically_zero(self):
+        self.assertEqual(poisson_median(0.6), 0)
+        self.assertEqual(poisson_median(1.1), 1)
+        self.assertEqual(poisson_median(1.8), 2)
+
     def test_prediction_probabilities_sum_to_100(self):
         match = MatchContext("a-b", datetime(2026, 6, 12), team("A", 1, 2000), team("B", 30, 1600))
         result = predict_match(match)
         self.assertAlmostEqual(result.home_win + result.draw + result.away_win, 100, places=1)
         self.assertGreater(result.home_win, result.away_win)
-        home_goals, away_goals = map(int, result.likely_score.split("–"))
-        self.assertGreater(home_goals, away_goals)
+        home_goals, away_goals = map(int, result.likely_score.split("-"))
+        self.assertGreaterEqual(home_goals, away_goals)
 
     def test_metrics(self):
         self.assertAlmostEqual(log_loss(0.5), 0.693147, places=5)

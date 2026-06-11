@@ -28,6 +28,12 @@ def poisson_probability(goals: int, expected_goals: float) -> float:
     return math.exp(-expected_goals) * expected_goals**goals / math.factorial(goals)
 
 
+def poisson_median(expected_goals: float) -> int:
+    if expected_goals <= 0:
+        return 0
+    return max(0, math.floor(expected_goals + 1 / 3 - 0.02 / expected_goals))
+
+
 def score_matrix(home_xg: float, away_xg: float, max_goals: int = 7) -> tuple[tuple[float, ...], ...]:
     matrix = tuple(
         tuple(poisson_probability(h, home_xg) * poisson_probability(a, away_xg) for a in range(max_goals + 1))
@@ -66,13 +72,6 @@ def predict_match(match: MatchContext) -> PredictionResult:
         key=lambda item: item["probability"],
         reverse=True,
     )
-    outcome = max(("home", home_win), ("draw", draw), ("away", away_win), key=lambda item: item[1])[0]
-    representative_scores = [
-        score for score in scores
-        if (outcome == "home" and score["home"] > score["away"])
-        or (outcome == "draw" and score["home"] == score["away"])
-        or (outcome == "away" and score["home"] < score["away"])
-    ]
     completeness = (home["completeness"] + away["completeness"]) / 2
     confidence = 55 + 35 * completeness
     factor_names = {
@@ -99,7 +98,7 @@ def predict_match(match: MatchContext) -> PredictionResult:
         home_win=home_percent,
         draw=draw_percent,
         away_win=away_percent,
-        likely_score=f"{representative_scores[0]['home']}–{representative_scores[0]['away']}",
+        likely_score=f"{poisson_median(home_xg)}-{poisson_median(away_xg)}",
         top_scores=tuple(scores[:3]),
         confidence=round(confidence, 1),
         factors=factors,
